@@ -11,7 +11,7 @@ def baixar_video():
     print("Iniciando download do áudio...")
 
     stream = yt.streams.filter(only_audio=True).first()
-    caminho = stream.download(output_path="/home/emanuel/Downloads/Videos")
+    caminho = stream.download(output_path="caminho do arquivo")
     print(f"Download concluído: {caminho}")
 
     return caminho
